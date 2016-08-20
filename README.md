@@ -1,2 +1,2 @@
 # spark25.github.io
-An experimental Browser project based on TheUltimateBrowserProject
+My Portfolio page and also one of my projects for the front-end-certification from freecodecamp.com.
