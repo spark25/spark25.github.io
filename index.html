@@ -1,7 +1,174 @@
+
+
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+<html >
+  <head>
+    <meta charset="UTF-8">
+
+
+    <title>CodePen - Spark Dev</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">, <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Slabo+27px" rel="stylesheet">
+    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+
+        <style>
+      #logo {
+  margin-top: -10px;
+  height: 45px;
+}
+
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 1rem 5rem -2rem;
+}
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #FE6C71;
+}
+
+div.bgWelcome {
+  opacity: 0.5;
+}
+
+#Author {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+#welcome {
+  background-image: url(https://goo.gl/cBwmuV);
+  background-size: 1380px 650px;
+  height: 650px;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  font-family: 'Lobster Two', cursive;
+  font-size: 35px;
+}
+
+.color-me {
+  color: #FE6C71;
+}
+
+h1 {
+  text-align: center;
+  color: #FE6C71;
+}
+
+.mywell {
+  background-color: #ffffff;
+  font-size: 20px;
+  font-family: 'Slabo 27px', serif;
+  width: 80%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 3rem 5rem -2rem;
+}
+
+#myPic {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
+#Portfolio {
+  font-family: 'Slabo 27px', serif;
+  margin-top: 40px;
+}
+
+    </style>
+
+    
+    
+    
+  </head>
+
+  <body translate="no" >
+
+      <!-- navigation bar below this line -->
+<nav class="navbar navbar-invert navbar-fixed-top">
+<div class="container-fluid">
+    <div class="navbar-header">
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="color:#FE6C71">
+        <span class="icon-bar "></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+    <a class="navbar-brand" href="#"><img src="https://goo.gl/4NphCA" id="logo"></a>
+  </div> 
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right menuItems">
+        <li class="active"><a href="#welcome" class="color-me">Home</a>           </li>
+        <li><a href="#About" class="color-me">About</a></li>
+        <li><a href="#Portfolio"class="color-me">Portfolio</a></li>
+        <li><a href="#Contact" class="color-me">Contact</a></li> 
+      </ul>
+      </div>
+    </div>
+ </nav>
+
+  <!-- Welcome/Home of the Page starts here -->
+  <div id="welcome">
+ <blockquote style="font-size:35px">
+ <p  class="color-me"><i class="fa fa-quote-left fa-2x fa-pull-left fa-border" aria-hidden="true"></i>Simplicity is about subtracting the obvious and adding the meaningful.”</p>
+ <p id="Author">-John Maeda</p>
+  </blockquote>
+</div>
+  <!--About Section Below-->
+  <div id="About">
+    <h1>About</h1>
+     <div class="container mywell">
+       <!--Row-->
+     <div class="row">
+       <div class="col-md-4">
+       <img src="https://goo.gl/eWXZhL" alt="This is me :)" id="myPic" class="img-responsive">
+       </div>
+       <div class="col-md-7">
+      <p>Hi, I am Sumit, an aspiring front-end web developer.</p>
+    </div>
+    </div>
+    </div>
+  </div>
+  
+  <!--portfolio Below-->
+  <div id="Portfolio" >
+    <h1>Portfolio</h1>    
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+    </div>
+    
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+
+    
+    
+    
+    
+  </body>
 </html>
+ 
