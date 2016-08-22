@@ -45,7 +45,7 @@
 }
 
 #welcome {
-  background-image: url(https://goo.gl/pw8W3a);
+  background-image: url(bg.png);
   background-size: 100% 650px;
   background-repeat: no-repeat;
   height: 630px;
@@ -83,9 +83,9 @@ p {
 
 .mywell {
   background-color: #ffffff;
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'Slabo 27px', serif;
-  width: 95%;
+  width: 90%;
   height: auto;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -96,28 +96,38 @@ p {
   box-shadow: 0 3rem 5rem -2rem;
 }
 
-#myPic {
-  width: 200px;
-  height: auto;
-  border-radius: 50%;
-}
-
-.Awell {
-  background-color: #ffffff;
-  width: 80%;
-  height: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+.myPicCenter {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.mypic {
+  border: 1px solid #FE6C71;
+  border-radius: 50%;
+  width: 200px;
+  height: auto;
+}
+
+.SkillsWell {
+  background-color: #ffffff;
+  width: auto;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-color: transparent;
+}
+
+.col-xs-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .button {
   background-color: #ffffff;
-  /* Green */
   border: none;
   color: white;
   padding: 10px 20px;
@@ -283,12 +293,10 @@ img.img-hover:hover {
 
 input {
   width: 90%;
-  border-color: #FE6C71;
 }
 
 textarea {
   width: 90%;
-  border-color: #FE6C71;
 }
 
 .submitBtn {
@@ -296,7 +304,7 @@ textarea {
   font-size: 15px;
 }
 
-ul {
+Social {
   display: block;
   list-style-type: none;
   margin: 0;
@@ -356,11 +364,11 @@ li a:visited {
     <a class="navbar-brand" href="#"><img src="https://goo.gl/4NphCA" id="logo"></a>
   </div> 
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right menuItems" style="color:#FE6C71">
-        <li><a href="#welcome" class="color-me">Home</a></li>
-        <li><a href="#About" class="color-me">About</a></li>
-        <li><a href="#Portfolio"class="color-me">Portfolio</a></li>
-        <li><a href="#Contact" class="color-me">Contact</a></li> 
+      <ul class="nav navbar-nav navbar-right menuItems color-me">
+        <li><a href="#welcome" >Home</a></li>
+        <li><a href="#About" >About</a></li>
+        <li><a href="#Portfolio">Portfolio</a></li>
+        <li><a href="#Contact">Contact</a></li> 
       </ul>
       </div>
     </div>
@@ -379,81 +387,68 @@ li a:visited {
      <div class="container mywell">
        <!--Row-->
      <div class="row">
-       <div class="col-md-4">
-       <img src="https://goo.gl/eWXZhL" alt="This is me :)" id="myPic" class="img-responsive">
+       <div class="col-md-4 myPicCenter">
+       <img src="https://goo.gl/eWXZhL" alt="This is me :)" class="img-responsive mypic">
        </div>
        <div class="col-md-7">
          <blockquote class="quote"> "Design has alowed us to stand out; to look different and show the difference boldly."
 </blockquote>
-         <p>Hi, and welcome to <span style="color:#FE6C71">spark DEV</span> ; I am Sumit, an aspiring and self-made web-developer.  <span class="glyphicon glyphicon-education"></span></p>
-         <p>I have a positive outlook towards life and obviously love <span class="glyphicon glyphicon-heart"></span> coding <span class="glyphicon glyphicon-pencil"> </span>Apart from being a tech-enthusiast <span class="	glyphicon glyphicon-phone"></span> I also like photography, <span class="glyphicon glyphicon-camera"></span> music <span class="glyphicon glyphicon-music"></span> and do all kinds of cool-creative stuff <span class="glyphicon glyphicon-sunglasses"></span></p>  
+         <p>Hi, and welcome to <span style="color:#FE6C71">spark DEV</span> ; I am Sumit, an aspiring and self-made web-developer.</p>
+         <p>I have a positive outlook towards life and obviously love <span class="glyphicon glyphicon-heart"></span> coding. Apart from being a tech-enthusiast, I also like photography, music and do all kinds of cool-creative stuff <span class="glyphicon glyphicon-sunglasses"></span></p>  
        </div>
        </div>
-       <p>Let's talk about my technical skills...</p>
-        <div class="Awell">
-         
+       <p>Skills and experience in...</p>
+        <div class="container SkillsWell">
            <div class="row">
-              <div class="col-xs-3">
+              <div class="col-xs-2">
                 <!--C icon-->
                 <span class="button button1" data-toggle="tooltip" title="C"><i class="devicon-c-plain colored"></i></span>
-  
-  </div>
-  <div class="col-xs-3">
+             </div><!--C 1-->
+              <div class="col-xs-2">
       <!--C++ icon-->
-  <span class="button button2" data-toggle="tooltip" title="C++"><i class="devicon-cplusplus-plain colored"></i></span>
-               
-             </div>
-              <div class="col-xs-3">
+  <span class="button button2" data-toggle="tooltip" title="C++"><i class="devicon-cplusplus-plain colored"></i></span>  
+             </div><!--C++ 2-->
+              <div class="col-xs-2">
               <!--Java Icon-->
-                <span class="button button3" data-toggle="tooltip" title="Java"><i class="devicon-java-plain colored"></i></span>
-               
-             </div>
-              <div class="col-xs-3">
+                <span class="button button3" data-toggle="tooltip" title="Java"><i class="devicon-java-plain colored"></i></span>  
+             </div><!--Java 3-->
+              <div class="col-xs-2">
                 <span class="button button4" data-toggle="tooltip" title="Android"><i class="devicon-android-plain colored"></i></span>
-                
-             </div>
-                  </div>
-                <div class="row">
-              <div class="col-xs-3">     
-                <span class="button button5" data-toggle="tooltip" title="MySQL"><i class="devicon-mysql-plain colored"></i></span>
-                
-             </div>
-             <div class="col-xs-3">
+             </div><!--Android 4-->
+              <div class="col-xs-2">     
+              <span class="button button5" data-toggle="tooltip" title="MySQL"><i class="devicon-mysql-plain colored"></i></span>
+             </div><!--MySQL 5-->
+              <div class="col-xs-2">
                <span class="button button6" data-toggle="tooltip" title="Git Hub"><i class="devicon-github-plain colored"></i></span>
-               
-             </div>
-              <div class="col-xs-3">
+             </div><!--Git 6-->
+          </div><!--row 1 ends-->
+             <div class="row">
+              <div class="col-xs-2">
                 <!--HTML5 icon-->
-                <span class="button button7" data-toggle="tooltip" title="HTML5"><i class="devicon-html5-plain colored"></i></span>
-                
-             </div>
-             <div class="col-xs-3">
+                <span class="button button7" data-toggle="tooltip" title="HTML5"><i class="devicon-html5-plain colored"></i></span>  
+             </div><!--HTML 7-->
+              <div class="col-xs-2">
              <!--CSS icon-->
                <span class="button button8" data-toggle="tooltip" title="CSS3"><i class="devicon-css3-plain colored"></i></span>
-              
-             </div>
-                </div>
-                <div class="row">
-              <div class="col-xs-3">
+             </div><!--CSS 8-->
+              <div class="col-xs-2">
               <!--JavaScript-->
-                <span class="button button9" data-toggle="tooltip" title="JavaScript"> <i class="devicon-javascript-plain colored"></i></span>
-               
-             </div>
-              <div class="col-xs-3">
+                <span class="button button9" data-toggle="tooltip" title="JavaScript"> <i class="devicon-javascript-plain colored"></i></span> 
+ </div><!--JavaScript 9-->
+            
+              <div class="col-xs-2">
                 <!--Node.js icon-->
                 <span class="button button10" data-toggle="tooltip" title="node.js"><i class="devicon-nodejs-plain colored"></i></span>
-                
-             </div>
-              <div class="col-xs-3">
+             </div><!--Node.JS 10-->
+              <div class="col-xs-2">
                 <!--React.js icon-->
                 <span class="button button11" data-toggle="tooltip" title="react.js"><i class="devicon-react-original colored"></i></span>
-               
-             </div>
-  <div class="col-xs-3">
+             </div><!--React.JS 11-->
+              <div class="col-xs-2">
                 <!--D3.js icon-->
     <span class="button button12" data-toggle="tooltip" title="D3.js"><i class="devicon-d3js-plain colored"></i></span>
-             </div>
-           </div><!--Row 3 Ends-->
+             </div><!--D3.JS 12-->
+           </div><!--Row 2 Ends-->
        </div><!--well ends-->
        </div><!--myWell ends-->
          </div><!--About ends-->
@@ -513,7 +508,7 @@ li a:visited {
        <span class="whiteFont"><h3>Around the web <i class="fa fa-globe" aria-hidden:"true"></i></h3></span>
        <br>
        <br>
-       <ul class="container">
+       <ul class="container Social">
          <li><a href="http://facebook.com/spark25" target="_blank" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i></a></li>
          <li><a href="http://instagram.com/whoissumit" target="_blank" data-toggle="tooltip" title="Instagram"><i class="fa fa-instagram fa-4x" aria-hidden="true"></i></a></li>
          <li><a href="http://twitter.com" target="_blank" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter fa-4x" aria-hidden:"true"></i></a></li>
